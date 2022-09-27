@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding =ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        print("Start application")
 
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
         binding.mainViewModel = viewModel
