@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    <variable
+        name="mainViewModel"
+        type="com.example.bascketballscore.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/Content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/local"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/minus1Local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLocal"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="51dp"
+            android:onClick="@{() -> mainViewModel.minus(1, true)}"
+            android:text="@string/minusOne"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/resultLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLocal"
+            android:layout_alignStart="@+id/textLocal"
+            android:layout_alignTop="@+id/minus1Local"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/plus1Local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLocal"
+            android:layout_alignParentEnd="true"
+            android:onClick="@{() -> mainViewModel.plus(1, true)}"
+            android:text="@string/plusOne"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/plus2Local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus1Local"
+            android:layout_alignParentEnd="true"
+            android:onClick="@{() -> mainViewModel.plus(2, true)}"
+            android:text="@string/plusTwo"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus2Local"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="@{() -> mainViewModel.reset()}"
+            android:text="@string/reset"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/goDetailActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus2Local"
+            android:layout_alignTop="@id/reset"
+            android:layout_alignParentEnd="true"
+            android:text="@string/next"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/minus1Visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:onClick="@{() -> mainViewModel.minus(1, false)}"
+            android:text="@string/minusOne"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/resultVisits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+            android:layout_alignStart="@+id/textLocal"
+            android:layout_alignTop="@+id/minus1Visit"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/plus1Visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+            android:layout_alignParentEnd="true"
+            android:onClick="@{() -> mainViewModel.plus(1, false)}"
+            android:text="@string/plusOne"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/plus2Visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus1Visit"
+            android:layout_alignParentEnd="true"
+            android:onClick="@{() -> mainViewModel.plus(2, false)}"
+            android:text="@string/plusTwo"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus2Visit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/visitors"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+</layout>

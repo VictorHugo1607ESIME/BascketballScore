@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BascketballScore</string>
+    <string name="visitors">Visitors</string>
+    <string name="local">Locals</string>
+    <string name="minimumValue">Minimum value reached</string>
+    <string name="valuesReset">Value have been reset</string>
+    <string name="LV">Local - Visitors</string>
+    <string name="localWin">Locals Win!!!</string>
+    <string name="visitorsWin">Visitors Win!!!</string>
+    <string name="tie">Tie</string>
+    <string name="WR">without results</string>
+    <string name="reset">R</string>
+    <string name="next">></string>
+
+    <!--   Buttons number   -->
+    <string name="minusOne">-1</string>
+    <string name="minusTwo">-2</string>
+    <string name="plusOne">+1</string>
+    <string name="plusTwo">+2</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BascketballScore</string>
+    <string name="visitors">Visitantes</string>
+    <string name="local">Locales</string>
+    <string name="minimumValue">Has llegado al valor mínimo</string>
+    <string name="valuesReset">Los valores fueron reseteados</string>
+    <string name="LV">Local - Visitantes</string>
+    <string name="localWin">Los locales ganan!!!</string>
+    <string name="visitorsWin">Los visitantes ganan!!!</string>
+    <string name="tie">Empate</string>
+    <string name="WR">Sin resultados</string>
+    <string name="reset">R</string>
+    <string name="next">></string>
+
+    <!--   Buttons number   -->
+    <string name="minusOne">-1</string>
+    <string name="minusTwo">-2</string>
+    <string name="plusOne">+1</string>
+    <string name="plusTwo">+2</string>
+</resources>
