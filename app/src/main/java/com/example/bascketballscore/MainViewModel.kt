@@ -11,7 +11,6 @@ class MainViewModel: ViewModel() {
 
     var _resultLocal:MutableLiveData<Int> = MutableLiveData()
     var _resultVisit:MutableLiveData<Int> = MutableLiveData()
-    internal val toastMessage = SingleLiveEvent<Int>()
 
     val resultLocal : LiveData<Int>
         get() = _resultLocal
